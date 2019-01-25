@@ -25,15 +25,16 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 杨雨露衷心地希望有志同道合的朋友与她一起在C++的世界中玩耍，在阳光中大声念出用代码写出的诗歌。
 
 
-
 ---
 
 ## Where's 杨雨露？
 
-> -杨雨露的 Github 页面：[Github 杨雨露][]
-> -杨雨露的邮箱：[3185750139@qq.com][]
+> - 杨雨露的 Github 页面：[Github 杨雨露][]
+> - 杨雨露的邮箱：[3185750139@qq.com][]
 
-
+---
+## More Information
+[杨雨露's Idols][]
 
 2019年1月25日
 
@@ -56,3 +57,4 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 
 [Github 杨雨露]:https://github.com/tanpero/
+[杨雨露's Idols]:https://tanpero.github.io/

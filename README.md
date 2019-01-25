@@ -34,8 +34,8 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 ---
 ## More Information
-[杨雨露's Thanks][]
-[杨雨露's Idols][]
+- [杨雨露's Thanks][]
+- [杨雨露's Idols][]
 
 2019年1月25日
 

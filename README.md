@@ -29,13 +29,14 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 ## Where's 杨雨露？
 
-> - 杨雨露的 Github 页面：[Github 杨雨露][]
+> - 杨雨露的 Github 页面：[Github 杨雨露][https://github.com/tanpero/]
 > - 杨雨露的邮箱：[3185750139@qq.com](mailto:3185750139@qq.com)
 
 ---
 ## More Information
-- [杨雨露's Thanks][]
-- [杨雨露's Idols][]
+- [杨雨露's Thanks](https://tanpero.github.io/profile)
+- [杨雨露's Projects](https://tanpero.github.io/projects)
+- [杨雨露's Idols](https://tanpero.github.io/idols)
 
 2019年1月25日
 
@@ -46,17 +47,3 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-[Github 杨雨露]:https://github.com/tanpero/
-[杨雨露's Thanks]:https://tanpero.github.io/profile
-[杨雨露's Idols]:https://tanpero.github.io/idols

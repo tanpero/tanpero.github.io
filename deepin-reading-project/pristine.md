@@ -1,6 +1,6 @@
 # 《昆虫记》思想荟萃
 
-*the <b>Pristine</b>in Souvenirs Entomologiques*
+*the <b>Pristine</b> in Souvenirs Entomologiques*
 
 ---
 

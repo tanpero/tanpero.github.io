@@ -57,4 +57,4 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 
 [Github 杨雨露]:https://github.com/tanpero/
-[杨雨露's Idols]:https://tanpero.github.io/
+[杨雨露's Idols]:https://tanpero.github.io/idols.md

@@ -22,7 +22,7 @@ GItHub: [MakeSharp](https://github.com/tanpero-project/MakeSharp/)
 
 GItHub: [Reservator](https://github.com/tanpero/Reservator]/)
 
-可以看看: [README](https://tanpero.github.io/reservator-project/README.md)  [README（中文）](https://tanpero.github.io/reservator-project/README-zh.md)
+可以看看: [README](https://tanpero.github.io/reservator-project/README)  [README（中文）](https://tanpero.github.io/reservator-project/README-zh)
 
 ---
 

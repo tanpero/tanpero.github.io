@@ -26,31 +26,15 @@
 ---
 
 
-## 目前提供的文档格式
+## 可选的文档风格
 
-Markdown (.md)
+---
 
-> 用于编辑的 Markdown 源文件
-
-Epub (.epub)
-
-> 可用于电脑、手机电子书阅读器的电子书格式。
-
-HTML (.html) 
-
-> 网页格式，提供五种视觉样式。
-
-Kindle (.mobi) 
-
-> Amazon<sup>TM</sup>  Kindle 的电子书格式，使用 Calibre<sup>&copy;</sup> 编辑。
-
-LaTex (.tex)
-
-> LaTeX 源文件格式。
-
-OpenOffice (.odt)
-
-> 用于 OpenOffice 软件的文档格式。
+- light
+- newsprint
+- night
+- pixyll
+- whitey
 
 
 

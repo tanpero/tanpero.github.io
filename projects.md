@@ -4,13 +4,13 @@
 
 ## MomentPlus
 
-GItHub: [MomentPlus](https://github.com/tanpero/MomentPlus/)
+GitHub: [MomentPlus](https://github.com/tanpero/MomentPlus/)
 
 ---
 
 ## MakeSharp
 
-GItHub: [MakeSharp](https://github.com/tanpero-project/MakeSharp/)
+GitHub: [MakeSharp](https://github.com/tanpero-project/MakeSharp/)
 
 与[秋枫](https://github.com/qiufeng54321)合作的项目，目前处于初级开发状态。
 
@@ -20,7 +20,7 @@ GItHub: [MakeSharp](https://github.com/tanpero-project/MakeSharp/)
 
 ## Reservator
 
-GItHub: [Reservator](https://github.com/tanpero/Reservator/)
+GitHub: [Reservator](https://github.com/tanpero/Reservator/)
 
 这是 [项目主页](reservator-project) 
 
@@ -28,7 +28,7 @@ GItHub: [Reservator](https://github.com/tanpero/Reservator/)
 
 ## PhysicalMind
 
-GItHub: [PhysicalMind](https://github.com/tanpero/PhysicalMind/)
+GitHub: [PhysicalMind](https://github.com/tanpero/PhysicalMind/)
 
 ---
 

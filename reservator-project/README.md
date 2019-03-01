@@ -23,7 +23,7 @@
 
 ## 图书馆
 
-截止<span id="now"></span> <script>  document.getElementById("now").innerHTML = new Date() </script>，Reservator&copy; 图书馆中共有书籍18本。
+截止<span id="now"></span> ，Reservator&copy; 图书馆中共有书籍18本。
 
 图书馆在[这里！](list)
 
@@ -48,4 +48,20 @@
 
 广州市江南外国语学校 杨雨露
 
-2019年2月27日
+2019年3月1日
+
+<script type="text/javascript">
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    if (month < 10) {
+        month = "0" + month;
+    }
+    if (day < 10) {
+        day = "0" + day;
+    }
+    var nowDate = year + "年" + month + "月" + day + "日";
+    document.getElementById("now").innerHTML = nowDate;
+</script>
+

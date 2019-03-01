@@ -21,7 +21,11 @@
 
 ---
 
-图书馆在[这里](list)
+## 图书馆
+
+截止<span id="now"></span> <script>  document.getElementById("now").innerHTML = new Date() </script>，Reservator&copy; 图书馆中共有书籍18本。
+
+图书馆在[这里！](list)
 
 ---
 

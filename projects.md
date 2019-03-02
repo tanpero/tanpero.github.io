@@ -30,7 +30,11 @@ GitHub: [Reservator](https://github.com/tanpero/Reservator/)
 
 GitHub: [PhysicalMind](https://github.com/tanpero/PhysicalMind/)
 
+这是 [项目主页](physicalmind-project)
+
 ---
 
-最后更新：2019-2-24
+
+
+*2019年3月2日*
 

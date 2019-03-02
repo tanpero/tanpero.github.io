@@ -33,6 +33,7 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 > - 杨雨露的 Github 页面：[Github 杨雨露](https://github.com/tanpero/)
 > - 杨雨露的邮箱：[3185750139@qq.com](mailto:3185750139@qq.com)
+> - 杨雨露的QQ群：[C++艺术苦旅]（点击链接加入群聊【C++艺术苦旅】：https://jq.qq.com/?_wv=1027&k=5HM7fwn
 
 ---
 ## More Information

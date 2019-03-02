@@ -19,7 +19,7 @@
         cleanPage();
         var span = document.createElement("span");
         var table = document.getElementsByClassName("main-content")[0];
-        var list = ["楚辞", "韩非子", "东京梦华录", "列子", "古诗十九首", "史记", "左传", "平宋录", "庄子", "文心雕龙", "明史", "水经注", "汉书"];
+        var list = ["楚辞", "韩非子", "东京梦华录", "列子", "古诗十九首", "史记", "左传", "平宋录", "庄子", "文心雕龙", "明史", "水经注", "汉书", "礼记", "管子", "靖康传信录", "韩非子"];
         showList(list, table);
         showDate(span);
         table.appendChild(span);

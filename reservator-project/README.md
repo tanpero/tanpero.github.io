@@ -48,5 +48,7 @@
 
 广州市江南外国语学校 杨雨露
 
+<span id="now"></span>
+
 <script type="text/javascript" src="date.js"></script>
 

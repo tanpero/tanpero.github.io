@@ -19,6 +19,5 @@ var showList = function(list, table) {
 			"<hr />";
 			
 		table.appendChild(section);
-		alert(section.innerHTML);
 	}
 }

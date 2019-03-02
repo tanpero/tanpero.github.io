@@ -14,7 +14,7 @@
 
 <script type="text/javascript" src="date.js"></script>
 
-<script type="text/javascript" src="common.js"</script>
+<script type="text/javascript" src="common.js"></script>
 
 <script type="text/javascript">
     window.onload = function() {

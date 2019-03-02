@@ -48,14 +48,5 @@
 
 广州市江南外国语学校 杨雨露
 
-2019年3月1日
-
-<script type="text/javascript">
-    var date = new Date();
-    var year = date.getFullYear();
-    var month = date.getMonth() + 1;
-    var day = date.getDate();
-    var nowDate = year + "年" + month + "月" + day + "日";
-    document.getElementById("now").innerHTML = nowDate;
-</script>
+<script type="text/javascript" src="date.js"></script>
 

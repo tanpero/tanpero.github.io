@@ -169,4 +169,6 @@
 
 ---
 
-*2019年2月28日* 
+<span id="now"></span>
+
+<script type="text/javascript" src="date.js"></script>

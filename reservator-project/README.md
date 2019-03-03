@@ -50,5 +50,13 @@
 
 <span id="now"></span>
 
-<script type="text/javascript" src="date.js"></script>
+<script type="text/javascript" src="/assets/date.js"></script>
+
+
+
+<script src="/assets/common.js"></script>
+
+<script>
+    cleanPage();
+</script>
 

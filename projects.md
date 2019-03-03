@@ -53,3 +53,11 @@ GitHub: [PhysicalMind](https://github.com/tanpero/PhysicalMind/)
 
 *2019年3月3日*
 
+<script src="/assets/common.js"></script>
+
+<script>
+    cleanPage();
+</script>
+
+
+

@@ -50,5 +50,12 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 
 
+<script src="/assets/common.js"></script>
+
+<script>
+    cleanPage();
+</script>
+
+
 
 

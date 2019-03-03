@@ -27,3 +27,12 @@
 ---
 
 *2019年3月2日*
+
+
+
+<script src="/assets/common.js"></script>
+
+<script>
+    cleanPage();
+</script>
+

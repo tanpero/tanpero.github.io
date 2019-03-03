@@ -6,3 +6,11 @@
 
 [the **Pristine** in *Souvenirs Entomologiques*](/deepin-reading-project/pristine)
 
+
+
+<script src="/assets/common.js"></script>
+
+<script>
+    cleanPage();
+</script>
+

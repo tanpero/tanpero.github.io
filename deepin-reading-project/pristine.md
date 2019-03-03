@@ -1,10 +1,10 @@
 # 《昆虫记》思想荟萃
 
-<<<<<<< HEAD
 *the <b>Pristine</b> in Souvenirs Entomologiques* 
 =======
 *the <b>Pristine</b> in Souvenirs Entomologiques*
->>>>>>> f5e88163f137a13620d6700446e5ca29080e3d5f
+
+
 
 ---
 

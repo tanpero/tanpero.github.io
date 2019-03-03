@@ -1,3 +1,5 @@
+<link rel="icon" type="image/x-icon"
+ href="/favicon.ico">
 # 杨雨露's World
 
 ---

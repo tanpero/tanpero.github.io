@@ -23,7 +23,7 @@
 
 ## 图书馆
 
-截止<span id="now"></span> ，Reservator&copy; 图书馆中共有书籍18本。
+截止<span id="now"></span> ，Reservator&copy; 图书馆中共有书籍 <span id="books-count"></span> 本。
 
 图书馆在[这里！](list)
 
@@ -51,12 +51,15 @@
 <span id="now"></span>
 
 <script type="text/javascript" src="/assets/date.js"></script>
-
+<script src="list.js"</script>
 
 
 <script src="/assets/common.js"></script>
 
 <script>
     cleanPage();
+	window.onload = function() {
+		document.getElementById("books-count").innerHTML = list.length;
+	}
 </script>
 

@@ -1,3 +1,5 @@
+var list = ["陈书", "楚辞", "韩非子", "东京梦华录", "列子", "古诗十九首", "史记", "左传", "平宋录", "庄子", "文心雕龙", "明史", "水经注", "汉书", "礼记", "管子", "靖康传信录"];
+
 var showList = function(list, table) {	
 	for (var i = 0, length = list.length; i < length; i += 1) {
 		var section = document.createElement("p");

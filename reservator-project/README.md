@@ -51,7 +51,7 @@
 <span id="now"></span>
 
 <script type="text/javascript" src="/assets/date.js"></script>
-<script src="list.js"</script>
+<script src="list.js"></script>
 
 
 <script src="/assets/common.js"></script>

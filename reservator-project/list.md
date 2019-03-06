@@ -21,7 +21,8 @@
         showList(list, table);
         showDate(span);
         table.appendChild(span);
+		
+		cleanPage();
     }
-	cleanPage();
 </script>
 

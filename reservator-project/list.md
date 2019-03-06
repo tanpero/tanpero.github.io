@@ -15,13 +15,14 @@
 <script type="text/javascript" src="/assets/common.js"></script>
 
 <script type="text/javascript">
+	cleanPage();
     window.onload = function() {
-        cleanPage();
         var span = document.createElement("span");
         var table = document.getElementsByClassName("main-content")[0];
         showList(list, table);
         showDate(span);
         table.appendChild(span);
     }
+	
 </script>
 

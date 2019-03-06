@@ -15,7 +15,6 @@
 <script type="text/javascript" src="/assets/common.js"></script>
 
 <script type="text/javascript">
-	cleanPage();
     window.onload = function() {
         var span = document.createElement("span");
         var table = document.getElementsByClassName("main-content")[0];
@@ -23,6 +22,6 @@
         showDate(span);
         table.appendChild(span);
     }
-	
+	cleanPage();
 </script>
 

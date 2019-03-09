@@ -42,7 +42,34 @@
 
 
 
+## 主项目及分支情况
 
+---
+
+项目的源文件使用 Markdown 编写。
+
+这里的图书馆使用的是 [Project Branch for HTML](https://github.com/tanpero/Reservator-HTML) 项目分支中的 HTML 文档。
+
+
+
+- Master Project
+
+  [Source](https://github.com/tanpero/Reservator)
+
+------
+
+- [Project Branch for Epub](https://github.com/tanpero/Reservator-Epub)
+- [Project Branch for HTML](https://github.com/tanpero/Reservator-HTML)
+- [Project Branch for Kindle](https://github.com/tanpero/Reservator-Kindle)
+- [Project Branch for LaTeX](https://github.com/tanpero/Reservator-LaTeX)
+- [Project Branch for OpenOffice](https://github.com/tanpero/Reservator-OpenOffice)
+- [Project Branch for OPML](https://github.com/tanpero/Reservator-OPML)
+- [Project Branch for PDF](https://github.com/tanpero/Reservator-PDF)
+- [Project Branch for StructuredText](https://github.com/tanpero/Reservator-reStructuredText)
+- [Project Branch for RTF](https://github.com/tanpero/Reservator-RTF)
+- [Project Branch for Textile](https://github.com/tanpero/Reservator-Textile)
+- [Project Branch for Wiki](https://github.com/tanpero/Reservator-Wiki)
+- [Project Branch for MS-Office](https://github.com/tanpero/Reservator-Word)
 
 ---
 

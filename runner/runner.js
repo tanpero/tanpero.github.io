@@ -8,7 +8,9 @@ $(document).ready(main);
 function main() {
 	
 	const $time = $("#current-time");
-	setInterval(() => $time.text("现在是 " + moment().format("YYYY年MM月DD日，hh点mm分ss秒，a好。 ")));
+	
+	let headerMessage = "现在是 " + moment().format("YYYY年MM月DD日，hh点mm分ss秒，a好。 ");
+	setInterval(() => $time.text(headerMessage), 1000);
 
     const editor = CodeMirror((area) => {
         let codeArea = document.getElementById("code");
@@ -27,13 +29,13 @@ function main() {
 
     editor.setSize('555px', '1000px');     //设置代码框的长宽
 	
-	if (!store.get("name")) {
+	if (!Cookies.get("name")) {
 		let name =  prompt("初次见面，你好啊~请问你叫什么名字呢？");
 		if (name) {
-			store.set("name", name);
+			Cookies.set("name", name, { expires: 365 });
 		}
 	} else {
-		$time.text($time.text() + "又见面了，" + store.get("name") + "。");
+		headerMessage += "又见面了，" + Cookies.get("name") + "。";
 	}
 
     const output = document.getElementById("output");

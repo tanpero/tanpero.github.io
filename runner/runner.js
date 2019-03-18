@@ -5,7 +5,7 @@ function main() {
 	
 	const $time = $("#current-time");
 	
-	let headerMessage = "现在是" + moment().format("YYYY年MM月DD日hh点，a好。 ")
+	let headerMessage = () => "现在是" + moment().format("YYYY年MM月DD日hh点，a好。 ");
 	
 
     const editor = CodeMirror((area) => {
@@ -55,7 +55,9 @@ function main() {
 		headerMessage += "又见面了，" + Cookies.get("name") + "。";
 	}
 	
-	setInterval(() => $time.text(headerMessage), 3600 * 1000);
+	$time.text(headerMessage());
+	
+	setInterval(() => $time.text(headerMessage()), 3600 * 1000);
 
     const output = document.getElementById("output");
 

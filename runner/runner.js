@@ -1,7 +1,3 @@
-let themeSheet = document.createElement("link");
-themeSheet.href = themeFileList[themeNameList.indexOf("monokai")];
-themeSheet.rel = "stylesheet";
-document.head.appendChild(themeSheet);
 
 $(document).ready(main);
 
@@ -10,6 +6,7 @@ function main() {
 	const $time = $("#current-time");
 	
 	let headerMessage = "现在是 " + moment().format("YYYY年MM月DD日，hh点mm分ss秒，a好。 ")
+	
 
     const editor = CodeMirror((area) => {
         let codeArea = document.getElementById("code");
@@ -17,14 +14,35 @@ function main() {
     }, {
         mode: "text/javascript",    //实现 JavaScript 代码高亮
         lineNumbers: true,	//显示行号
-        theme: "monokai",	//设置主题
+        theme: "default",	//设置主题
         lineWrapping: true,	//代码折叠
         foldGutter: true,
         gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+		styleActiveLine: true,
         matchBrackets: true,	//括号匹配
         showCursorWhenSelecting: true,
 
     });
+	
+	let themeInput = document.getElementById("select-theme");
+	themeInput.onchange = selectTheme;
+	function selectTheme () {
+		var theme = themeInput.options[themeInput.selectedIndex].textContent;
+		editor.setOption("theme", theme);
+		location.hash = "#" + theme;
+	}
+	var choice = (location.hash && location.hash.slice(1)) ||
+				(document.location.search &&
+					decodeURIComponent(document.location.search.slice(1)));
+	if (choice) {
+		themeInput.value = choice;
+		editor.setOption("theme", choice);
+	}
+	CodeMirror.on(window, "hashchange", function() {
+		var theme = location.hash.slice(1);
+		if (theme) { themeInput.value = theme; selectTheme(); }
+	});
+	
 
     editor.setSize('555px', '800px');     //设置代码框的长宽
 	

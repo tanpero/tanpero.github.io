@@ -5,7 +5,9 @@ function main() {
 	
 	const $time = $("#current-time");
 	
-	let headerMessage = () => "现在是" + moment().format("YYYY年MM月DD日hh点，a好。 ");
+	let headMessage = "现在是" + moment().format("YYYY年MM月DD日hh点，a好。 ");
+	
+	let showMessage = () => headMessage;
 	
 
     const editor = CodeMirror((area) => {
@@ -52,10 +54,10 @@ function main() {
 			Cookies.set("name", name, { expires: 365 });
 		}
 	} else {
-		headerMessage += "又见面了，" + Cookies.get("name") + "。";
+		headMessage += "又见面了，" + Cookies.get("name") + "。";
 	}
 	
-	$time.text(headerMessage());
+	$time.text(showMessage());
 	
 	setInterval(() => $time.text(headerMessage()), 3600 * 1000);
 

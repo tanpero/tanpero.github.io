@@ -51,7 +51,7 @@ function main() {
 	if (!Cookies.get("name")) {
 		let name =  prompt("初次见面，你好啊~请问你叫什么名字呢？");
 		if (name) {
-			Cookies.set("name", name, { expires: 365 });
+			Cookies.set("name", name, { expires: 14 });
 		}
 	} else {
 		headMessage += "又见面了，" + Cookies.get("name") + "。";
@@ -62,8 +62,8 @@ function main() {
 	setInterval(() => $time.text(headerMessage()), 3600 * 1000);
 
     const output = document.getElementById("output");
-
-    document.getElementById("run").addEventListener("click", () => {
+	
+	const toRun = () => {
         try {
             output.innerText = "";
 
@@ -75,7 +75,11 @@ function main() {
         } catch (error) {
             alert("捕获错误 - " + error);
         }
-    }, false);
+    };
+
+    const runButton = document.getElementById("run")
+	runButton.addEventListener("click", toRun, false);
+	runButton.addEventListener("touchend", toRun, false);
 
     const $cursorBlinkRate = $("#cursor-blink-rate");
     $cursorBlinkRate.on("change", () => {

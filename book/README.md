@@ -49,15 +49,12 @@
   - [while 和 do-while 语句](第四章-语句/while和do-while语句.md)
   - [for 语句](第四章-语句/for语句.md)
   - [for-in 和 for-of 语句](第四章-语句/for-in和for-of语句.md)
-  - break 和 continue 语句
+  - 语句优化
   - 异常处理
   - [练习题](第四章-语句/第四章练习.md)
 
 - 第五章-函数
-  - 函数初步
-  - 函数作用域
-  - 匿名函数与函数表达式
-  - 箭头函数
+  - [函数初步](第五章-函数/函数初步.md)
   - arguments 对象
   - rest 参数
   - 方法

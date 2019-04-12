@@ -67,9 +67,13 @@ function main() {
         try {
             output.innerText = "";
 
-            function print() {
-                output.innerText += [...arguments].join("") + "\n";
+            document.write = () => {
+				let text = [...arguments].join("") + "\n";
+                output.innerText += text;
+				return text.length;
             }
+			
+			document.writeln = () => document.write(...arguments) - 1;
 
             eval(editor.getValue());
         } catch (error) {

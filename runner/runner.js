@@ -94,7 +94,7 @@ function main() {
 	
 
     const $lineWrapping = $("line-wrapping");
-    $("[name='lineWrapping']").on("blur",
+    $("[name='lineWrapping']").on("focus",
         (e) => {
             let value = $(e.target).attr("checked");
             alert(value);
@@ -102,7 +102,7 @@ function main() {
         });
 	
 	const $indentAccount = $("indent-account");
-	$("[name='indent-account']").on("blur",
+	$("[name='indent-account']").on("focus",
         (e) => {
             let value = $(e.target).attr("checked");
             alert(value);

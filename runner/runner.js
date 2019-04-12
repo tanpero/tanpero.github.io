@@ -90,7 +90,8 @@ function main() {
     const $cursorBlinkRate = $("#cursor-blink-rate");
     $cursorBlinkRate.on("change", () => {
         editor.setOption("cursorBlinkRate", +cursorBlinkRate.value);
-    })
+    });
+	
 
     const $lineWrapping = $("line-wrapping");
     $("[name='lineWrapping']").on("blur",
@@ -98,5 +99,13 @@ function main() {
             let value = $(e.target).attr("checked");
             alert(value);
             editor.setOption("lineWrapping", value);
+        });
+	
+	const $indentAccount = $("indent-account");
+	$("[name='indent-account']").on("blur",
+        (e) => {
+            let value = $(e.target).attr("checked");
+            alert(value);
+            editor.setOption("indentUnit", value);
         });
 }

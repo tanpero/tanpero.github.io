@@ -55,7 +55,8 @@ function main() {
 		}
 	} else {
 		headMessage += "又见面了，" + Cookies.get("name") + "。";
-		editor.setOption("value", `/*\n* 作者：${Cookies.get("name")}\n* 日期：${moment().format("YYYY-MM-DD")}\n*/\n\n`;
+		editor.setOption("value", (() => 
+			`/*\n* 作者：${Cookies.get("name")}\n* 日期：${moment().format("YYYY-MM-DD")}\n*/\n\n`)());
 	}
 	
 	$time.text(showMessage());

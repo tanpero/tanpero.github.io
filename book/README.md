@@ -2,7 +2,9 @@
 
 ---
 
-一本从头开始的 JavaScript 书，为了纪念我小学六年级时那段温暖祥和的日子。
+![](https://img.shields.io/badge/JavaScript-Art--Tour-brightgreen.svg)
+
+一本从头开始的JavaScript书，为了纪念我小学六年级时那段温暖祥和的日子。
 
 
 
@@ -56,11 +58,10 @@
 
 - 第五章-函数
   - [函数初步](第五章-函数/函数初步.md)
-  - arguments 对象
-  - rest 参数
   - 方法
   - 构造函数
   - 高阶函数
+  - 递归
   - 闭包
   - 高级主题：Generator 函数
   - [练习题](第五章-函数/第五章练习.md)

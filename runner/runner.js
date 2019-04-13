@@ -69,13 +69,13 @@ function main() {
         try {
             output.innerText = "";
 
-            document.write = () => {
-				let text = [...arguments].join("") + "\n";
+            document.write = (...args) => {
+				let text = args.join("") + "\n";
                 output.innerText += text;
 				return text.length;
             }
 			
-			document.writeln = () => document.write(...arguments) - 1;
+			document.writeln = () => (document.write(...arguments, '\n') - 1);
 
             eval(editor.getValue());
         } catch (error) {
@@ -94,18 +94,20 @@ function main() {
 	
 
     const $lineWrapping = $("line-wrapping");
-    $("[name='lineWrapping']").on("focus",
+    $("[name='lineWrapping']").on("input",
         (e) => {
             let value = $(e.target).attr("checked");
             alert(value);
             editor.setOption("lineWrapping", value);
         });
 	
-	const $indentAccount = $("indent-account");
-	$("[name='indent-account']").on("focus",
+	
+    $("[name='indent-account']").on("change",
         (e) => {
             let value = $(e.target).attr("checked");
             alert(value);
-            editor.setOption("indentUnit", value);
+            editor.setOption("indent-account", value);
         });
+	
+	//getRadioValue("indent-account");
 }

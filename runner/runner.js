@@ -70,12 +70,14 @@ function main() {
             output.innerText = "";
 
             document.write = (...args) => {
-				let text = args.join("") + "\n";
+				let text = args.join("");
                 output.innerText += text;
 				return text.length;
             }
 			
-			document.writeln = () => (document.write(...arguments, '\n') - 1);
+			document.writeln = () => {
+				document.write(...arguments, '\n') - 1;				
+			}
 
             eval(editor.getValue());
         } catch (error) {

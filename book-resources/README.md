@@ -10,17 +10,17 @@
 
 ## 浏览器
 
-- [Chrome](software/ChromeSetup.exe)
-- [Firefox](software/Firefox-Installer.exe)
+- [Chrome](https://github.com/tanpero/Book-Resources/blob/master/ChromeSetup.exe?raw=true)
+- [Firefox](https://github.com/tanpero/Book-Resources/blob/master/Firefox-Installer.exe?raw=true)
 
 
 
 ## 代码编辑器
 
-- [Notepad++](software/npp.7.6.3.Installer.x64.exe)
+- [Notepad++](https://github.com/tanpero/Book-Resources/blob/master/npp.7.6.3.Installer.x64.exe?raw=true)
 
 
 
 ## 运行环境
 
-- [Node.js](softwarenode-v11.13.0-x64.msi)
+- [Node.js](https://github.com/tanpero/Book-Resources/blob/master/node-v11.13.0-x64.msi?raw=true)

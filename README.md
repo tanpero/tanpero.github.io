@@ -20,10 +20,14 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 ---
 
-~~目前，杨雨露正在尝试撰写一个C++的日期解析/格式化/计算类库，该项目仍然处于初级阶段，但是杨雨露对这个项目未来的模样充满憧憬。~~
+曾经的尝试：
 
-杨雨露前段时间致力于开发（与编程无关的）[PhysicalMind](https://tanpero.github.io/physicalmind-project) 和
-[Reservator](https://tanpero.github.io/reservator-project) 项目。这两个项目在很大程度上是基于杨雨露作为在校学生的精神需求。 :-D
+（2019年寒假）一个C++的日期解析/格式化/计算类库，该项目仍然处于初级阶段，但是杨雨露对这个项目未来的模样充满憧憬。
+
+（2018年至今）杨雨露前段时间致力于开发（与编程无关的）[PhysicalMind](https://tanpero.github.io/physicalmind-project) 和
+[Reservator](https://github.com/tanpero/Reservator) 项目。这两个项目在很大程度上是基于杨雨露作为在校学生的精神需求。 :-D
+
+
 
 
 

@@ -23,9 +23,14 @@ function main() {
 		styleActiveLine: true,
         matchBrackets: true,	//括号匹配
 		autoCloseBrackets: true, // 括号补全
-		extraKeys: {"Ctrl-Space": "autocomplete"},
+		extraKeys: {
+			"Ctrl-Space": "autocomplete",
+			"Shift-Alt-Enter": function (cm) {
+				cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+			}
+		},
         showCursorWhenSelecting: true,
-
+		
     });
 	
 	let themeInput = document.getElementById("select-theme");

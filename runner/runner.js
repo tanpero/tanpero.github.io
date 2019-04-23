@@ -22,6 +22,8 @@ function main() {
         gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
 		styleActiveLine: true,
         matchBrackets: true,	//括号匹配
+		autoCloseBrackets: true, // 括号补全
+		extraKeys: {"Ctrl-Space": "autocomplete"},
         showCursorWhenSelecting: true,
 
     });

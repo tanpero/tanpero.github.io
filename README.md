@@ -45,6 +45,16 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
 ---
 
+## Life
+
+- **玉学**
+
+  玉指杨雨露的语文老师周小玉老师。她很可爱 2333
+
+  详见 [Jadelogy - 玉学主页](jadelogy)
+
+---
+
 ## Where's 杨雨露？
 
 > - 杨雨露的 Github 页面：[Github 杨雨露](https://github.com/tanpero/)

@@ -16,12 +16,13 @@ The Jadelogy，即**玉学**。
 
 <script type="text/javascript">
     var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
-    document.getElementById("change-style").addEventListener(function() {
+    document.getElementById("change-style").addEventListener("click", function() {
         var index = Math.floor(Math.random() * styles.length);
         var url = "/jadelogy/" + styles[index];
         window.location.assign(url);
     });
 </script>
+
 
 
 - - -

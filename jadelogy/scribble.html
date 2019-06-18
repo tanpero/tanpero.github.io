@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>README</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --monospace: Courier, monospace; --bg-color: #f9f9f9; --text-color: #303030; --active-file-bg-color: #E6E8EA; --side-bar-bg-color: #f9f9f9; }
+#write { --bg-color: #fff; }
+#write div, #write p { width: auto; }
+html { font-size: 15px; }
+body { background: rgb(249, 249, 249); font-family: "Helvetica Neue", Arial, sans-serif; font-weight: 400; line-height: 19px; padding: 0px; margin: 0px; }
+#footer-word-count-info { background: var(--bg-color); }
+header, .dropmenu { --text-color: #223c61; }
+header { color: rgb(51, 51, 51); }
+#typora-sidebar { font-size: 14px; }
+.file-list-item { border: 0px; }
+.file-list-item:hover, .file-tree-node[data-is-directory="false"]:hover > .file-node-background { transition: background-color 0.6s ease; background: var(--active-file-bg-color); }
+.file-node-content { cursor: default; }
+.file-list-item-summary { height: 34px; }
+.show-folder-name .file-list-item { padding-top: 16px; padding-bottom: 24px; }
+.file-list-item { padding-top: 18px; padding-bottom: 18px; }
+.file-list-item-file-name { line-height: 20px; font-size: 14px; margin-bottom: 4px; }
+#sidebar-files-menu, #ty-sidebar-footer { background: var(--bg-color); }
+body, html { background: url("scribble/light_wool.png") repeat; }
+#write { width: 100%; max-width: 768px; background: rgb(255, 255, 255); margin: 40px auto 120px; border-radius: 7px; border: 1px solid rgb(238, 238, 238); min-height: calc(100vh - 6em); padding: 60px; line-height: 1.6em; }
+@media screen and (max-width: 820px) {
+  body, html { --side-bar-bg-color: #fff; background: rgb(255, 255, 255); }
+  #write { border: none; margin-top: 0px; }
+}
+@media screen and (max-width: 1160px) {
+  body.pin-outline { --side-bar-bg-color: #fff; background: rgb(255, 255, 255); }
+  body.pin-outline #write { border: none; margin-top: 0px; }
+}
+.typora-node #write { min-height: calc(100% - 6em); }
+h1 { text-align: center; line-height: 1.5em; margin-bottom: 60px; }
+h2, h3, h4, h5 { margin: 2em 0px 1em; }
+ul, ol { padding: 0px 0px 0px 30px; }
+blockquote { padding: 0px 1em; margin: 14px 0px; border: 2px dashed rgb(208, 223, 218); border-radius: 5px; color: rgb(96, 96, 96); background: rgb(249, 249, 249); transition: all, 0.3s; font-style: normal !important; }
+#write .md-toc { margin: 2em -60px; border-bottom: 1px dotted rgb(204, 204, 204); border-top: 1px dotted rgb(204, 204, 204); width: calc(100% + 120px); border-radius: 0px; padding-left: 60px; padding-right: 60px; }
+#write > .md-toc:first-child { margin-top: 0px; border-top: 0px; }
+#write > .md-meta-block:first-child { margin: -60px -60px 2em; width: calc(100% + 120px); border-bottom: 1px dotted rgb(204, 204, 204); padding: 24px 60px; background: rgb(253, 253, 253); font-size: 14px; border-radius: 0px; color: var(--text-color); }
+.md-toc:focus .md-toc-content { border-width: initial; border-style: none; border-image: initial; border-color: inherit; margin: 20px 0px; }
+.md-toc-content { padding-left: 0px; padding-right: 0px; }
+#write div.md-toc-tooltip { left: 0px; padding-left: 60px; padding-right: 20px; top: -24px; border-top: 1px dotted rgb(204, 204, 204); }
+pre[mdtype] { word-wrap: break-word; background: rgb(248, 248, 248); padding: 1em; border-radius: 5px; width: 100%; line-height: 1.2em; }
+code { background: rgb(248, 248, 248); padding: 0.05rem; font-size: 0.9rem; border-radius: 3px; color: rgb(138, 0, 4); }
+p { margin-top: 1em; margin-bottom: 1em; }
+blockquote > :first-child { margin-top: 1em; }
+blockquote > :last-child { margin-bottom: inherit; }
+.md-fences { font-size: 1rem; }
+a { text-decoration: none; color: rgb(34, 102, 153); line-height: 1.4em; display: inline-block; vertical-align: baseline; zoom: 1; transition: color 0.3s; }
+[md-inline] a:hover { color: rgb(29, 88, 132); background-image: url("scribble/line.png"); background-repeat: repeat-x; background-position: left bottom; }
+#write .code-tooltip { width: auto; }
+#write > hr { margin: 2em -60px; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-left-color: initial; border-image: initial; border-bottom-style: dotted; border-bottom-color: rgb(204, 204, 204); }
+#write [cid] > table { border-collapse: collapse; border-spacing: 0px; border: 1px solid rgb(204, 202, 204); }
+#write table th { padding: 10px 15px; border-right: 1px solid rgb(204, 202, 204); background: rgb(233, 231, 233); text-shadow: rgb(243, 243, 243) 1px 1px 1px; font-weight: inherit; }
+#write table [cid] > td { padding: 10px; border-right: 1px solid rgb(204, 202, 204); border-top: 1px solid rgb(204, 202, 204); }
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property { color: rgb(34, 60, 97); }
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor { border-left: 3px solid rgb(34, 60, 97); }
+.outline-content li, .outline-content ul { line-height: 1.4rem; }
+.dropdown-menu { background-color: rgb(249, 249, 249); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(86, 106, 218); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(117, 120, 123); }
+.cm-s-inner .cm-keyword, .cm-s-inner .cm-property, .cm-s-inner.cm-keyword, .cm-s-inner.cm-property { color: rgb(29, 117, 179); }
+.cm-s-inner .cm-atom, .cm-s-inner .cm-number, .cm-s-inner.cm-atom, .cm-s-inner.cm-number { color: rgb(117, 67, 138); }
+.cm-s-inner .cm-node, .cm-s-inner .cm-tag, .cm-s-inner.cm-node, .cm-s-inner.cm-tag { color: rgb(156, 51, 40); }
+.cm-s-inner .cm-string, .cm-s-inner.cm-string { color: rgb(179, 94, 20); }
+.cm-s-inner .cm-variable, .cm-s-inner .cm-qualifier, .cm-s-inner.cm-variable, .cm-s-inner.cm-qualifier { color: rgb(4, 125, 101); }
+.file-node-open-state, .file-node-icon { color: rgb(158, 158, 158); }
+.code-tooltip.md-hover-tip { background: rgb(0, 0, 0); }
+
+
+
+
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name='header-n421' class='md-header-anchor '></a>The Jadelogy</h1><hr /><p>The Jadelogy，即<strong>玉学</strong>。</p><p>玉指杨雨露的语文老师周小玉老师。她很可爱 2333</p><p>玉学，即是以周老师的思想为基础发展而来的一门学问。</p><p>下为玉学经典——《玉说》，由项问枢同学执笔。不定期更新。</p><hr /><h2><a name='header-n429' class='md-header-anchor '></a>玉说</h2><blockquote><p>2019.6.17</p><p>By 项问枢</p></blockquote><p>&nbsp;</p><ul><li>玉擒故纵：周老师虽然没有改作文，但是却在出卷子</li></ul><p>&nbsp;</p><ul><li>玉罢不能：周老师停不下出卷的双手</li></ul><p>&nbsp;</p><ul><li><p>痛不玉生：</p><p>① 周老师并没有意识到出卷的危害</p><p>② 周老师并没有意识到出卷的危害，但学生们个个生不如死</p></li></ul><p>&nbsp;</p><ul><li>玉玉寡欢：周老师忘记了出新卷子，引申为周老师被强求少布置一点作业</li></ul><p>&nbsp;</p><ul><li>紧译玉食：出翻译卷是周老师的精神食粮</li></ul><p>&nbsp;</p><ul><li>玉言又止：周老师想多布置一点作业，但因为不可抗力原因而作罢</li></ul><p>&nbsp;</p><ul><li>玉拒还迎：周老师嘴上说着今天不出卷，但还是没有忍住出卷</li></ul><p>&nbsp;</p><ul><li>出乎玉料：周老师没有想到昨天只有区区几张卷子，却有一大堆人没做完</li></ul><p>&nbsp;</p><ul><li>毫不犹玉：周老师写下作业时的坚定信念</li></ul><p>&nbsp;</p><ul><li>玉众不同：当许多老师都少布置作业时，周老师独树一帜</li></ul><p>&nbsp;</p><ul><li><p>玉盖弥彰：</p><p>① 指周老师试图掩盖今天作业多的事实</p><p>② 形容周老师为了多布置作业，平日会少布置卷子，等到周末让大家一口闷</p></li></ul><p>&nbsp;</p><ul><li>玉速则不达：用尽量快的速度写，但还是因此没写完周老师的卷子</li></ul><p>&nbsp;</p><ul><li>及时玉：占用体育课的周老师</li></ul><p>&nbsp;</p><ul><li>殃及池玉：周老师莫名其妙地失去了出卷子的时间</li></ul><p>&nbsp;</p><ul><li>如玉得水：周老师拿起保温杯，就拥有了出卷的动力</li></ul><p>&nbsp;</p><ul><li>气玉轩昂：周老师出了许多卷子，神清气爽</li></ul><p>&nbsp;</p><ul><li>安危玉供：笔芯的安危与周老师出卷的多少密切相关</li></ul><p>&nbsp;</p><ul><li>事玉愿违：本来希望周老师少出一点卷，但周老师又多出了一点卷</li></ul><p>&nbsp;</p><ul><li>无玉伦比：没有谁可以与周老师的出卷量争锋</li></ul><p>&nbsp;</p><ul><li>玉人为善：周老师良心发现，主动少布置了作业</li></ul><p>&nbsp;</p><ul><li>风调玉顺：周老师不仅调到了课，而且顺利地出完了卷子</li></ul><p>&nbsp;</p><ul><li>大玉治水：无论你有多水，周老师都会用卷子堵住你的嘴</li></ul><p>&nbsp;</p><hr /><blockquote><p>2019.6.18 更新</p><p>By 项问枢 &amp; 郑日 &amp; 杨雨露</p></blockquote><p>&nbsp;</p><ul><li>教书玉人：周老师用一张张卷子教会学生做人</li></ul><p>&nbsp;</p><ul><li>飘飘玉仙：周老师出卷已至化境，神清气爽</li></ul><p>&nbsp;</p><ul><li>怀才不玉：周老师有才华却出不了卷子</li></ul><p>&nbsp;</p><ul><li>摇摇玉坠：学生因周老师而做卷子做得虚脱</li></ul><p>&nbsp;</p><ul><li>百年不玉：周老师出的卷子卷帙浩繁</li></ul><p>&nbsp;</p><ul><li>玉之以理：周老师用充分的道理来劝大家多做些卷子</li></ul><p>&nbsp;</p><ul><li>雕栏玉砌：无论有多少沙雕都拉不住周老师出卷子的磅礴气概</li></ul><p>&nbsp;</p><ul><li>玉满中外：周老师出的卷子闻名中外，人们赞不绝口</li></ul><p>&nbsp;</p><ul><li><p>不言而玉：</p><p>① 周老师没有说话，但大家都知道她在出卷子</p><p>② 没有人说话，大家都在周老师的卷子上厮杀</p></li></ul><p>&nbsp;</p><ul><li>不期而玉：周老师又双叒叕出了新卷子</li></ul><p>&nbsp;</p><ul><li>勿谓言之不玉也：不要说周老师没有提前说过又出了新卷子</li></ul><p>&nbsp;</p><ul><li>犹玉不决：周老师开始为出阅读卷还是文言文卷而烦恼</li></ul><p>&nbsp;</p><ul><li>玉人方便，玉己方便：今天少出一点卷子，是为了给明天留出更多的时间出更多卷子</li></ul><p>&nbsp;</p><ul><li>朱玉在前：朱瑾和周老师在讨论今天出几张卷子</li></ul><p>&nbsp;</p><ul><li>抛砖引玉：抛出像砖那么厚的卷子，会引来周老师</li></ul><p>&nbsp;</p><ul><li>玉时俱进：周老师随时间推移，经验越来越丰富，出的卷子越来越多</li></ul><p>&nbsp;</p><ul><li>玉演玉烈：周老师出卷子的势头随时间推移而变得越来越大</li></ul><p>&nbsp;</p><ul><li>暴玉倾盆：愤怒的周老师出了一盆的卷子，倒在讲台上</li></ul><p>&nbsp;</p><ul><li>玉后春笋：形容周老师出卷的速度比春笋拔尖的速度还快</li></ul><p>&nbsp;</p><ul><li>无玉伦比：没有人的出卷速度可与周老师相提并论</li></ul><p>&nbsp;</p><ul><li>玉死网破：因为作业太多，同学们上网的想法破灭</li></ul><p>&nbsp;</p><ul><li>玉和熊掌不可兼得：形容因为卷子太多，同学们连吃饭的时间都没了</li></ul><p>&nbsp;</p><ul><li>夜来风玉声，花落知多少：大晚上听见周老师狂风暴雨一般的加作业，祖国的花朵该枯萎多少啊</li></ul><p>&nbsp;</p></div>
+</body>
+</html>

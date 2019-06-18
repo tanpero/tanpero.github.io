@@ -10,6 +10,20 @@ The Jadelogy，即**玉学**。
 
 下为玉学经典——《玉说》，由项问枢同学执笔。不定期更新。
 
+---
+
+<button id="change-style">更换一种显示风格</button>
+
+<script type="text/javascript">
+    var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
+    document.getElementById("change-style").addEventListener(function() {
+        var index = Math.floor(Math.random() * styles.length);
+        var url = "/jadelogy/" + styles[index];
+        window.location.assign(url);
+    }
+</script>
+
+
 - - -
 
 ## 玉说

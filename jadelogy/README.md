@@ -21,6 +21,7 @@ The Jadelogy，即**玉学**。
         var url = "/jadelogy/" + styles[index];
         window.location.assign(url);
     });
+    document.title = "玉学 - The Jadelogy";
 </script>
 
 

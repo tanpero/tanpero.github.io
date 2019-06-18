@@ -20,7 +20,7 @@ The Jadelogy，即**玉学**。
         var index = Math.floor(Math.random() * styles.length);
         var url = "/jadelogy/" + styles[index];
         window.location.assign(url);
-    }
+    });
 </script>
 
 

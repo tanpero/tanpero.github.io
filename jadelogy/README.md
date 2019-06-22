@@ -22,7 +22,16 @@ The Jadelogy，即**玉学**。
         window.location.assign(url);
     });
     document.title = "玉学 - The Jadelogy";
+    var extension = window.location.toString().split("#")[1];
+    if (extension) {        
+        var anchor = document.createElement("a");
+        anchor.href = "#" + extension;
+        anchor.style.display = "hide";
+        document.body.appendChild(anchor);
+        anchor.click();
+    }
 </script>
+
 
 
 - - -
@@ -339,4 +348,38 @@ The Jadelogy，即**玉学**。
 予观左右，色具灰败，不知春风何处耳。故曰：“春风不度玉门关。”
 
 2019.6.18
+
+
+
+## 记玉案游
+
+> By 项问枢
+
+予素仰玉师，常游遨其案。适近结业之期，恰逢新试方毕，自觉颇得，厚望寄之故，跃跃欲悉。然玉师虽许阅之，翌日复日，信杳无。
+及午，予不胜奇，顾四下无人，入室而观，书彻危墙，乃旧识焉；兼有新纸成山，不知何物。前而视，皆课业耳。师入，予心惶惶，不敢言文，求讫再三，得减而出。
+既出，告众曰:"妙哉！今玉济有舟楫，端居幸圣明也。"
+
+
+
+
+
+## 答项玉枢书
+
+> By 郑日 & 项问枢（改）
+
+予今有卷，数足七八，乃师所贻也。语文者，玉文哉！阅卷，文字冗长，待填处多矣。复检，背默译者居多。
+是夜，漏断而欲睡，母告之:"语文卷尽邪？"遂起。及诸事毕，天将彻。
+而今又得卷数张，其无穷日。其之穷日，师复出卷，卷又有卷，张张叠叠无穷匮也！卷卷缠身，故无暇外游。
+呜呼哀哉，思君不见下玉舟。
+玉日顿首。
+
+
+
+
+
+---
+
+# <span id="cleanlogy">洁学</span>
+
+---
 

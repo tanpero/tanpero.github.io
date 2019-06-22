@@ -1,5 +1,6 @@
 <link rel="icon" type="image/x-icon"
  href="/favicon.ico">
+
 # 杨雨露's World
 
 ---
@@ -52,6 +53,12 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
   玉指杨雨露的语文老师周小玉老师。她很可爱 2333
 
   详见 [Jadelogy - 玉学主页](jadelogy)
+
+  *衍生*：
+
+  - [洁学](jadelogy#cleanlogy)
+  - [斌学](jadelogy#refinelogy)
+  - [敏学](jadelogy#agilelogy)
 
 ---
 

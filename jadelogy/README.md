@@ -15,13 +15,6 @@ The Jadelogy，即**玉学**。
 <button id="change-style">更换一种显示风格</button>
 
 <script type="text/javascript">
-    var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
-    document.getElementById("change-style").addEventListener("click", function() {
-        var index = Math.floor(Math.random() * styles.length);
-        var url = "/jadelogy/" + styles[index];
-        window.location.assign(url);
-    });
-    document.title = "玉学 - The Jadelogy";
     var extension = window.location.toString().split("#")[1];
     if (extension) {        
         var anchor = document.createElement("a");
@@ -30,6 +23,15 @@ The Jadelogy，即**玉学**。
         document.body.appendChild(anchor);
         anchor.click();
     }
+    
+    var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
+    document.getElementById("change-style").addEventListener("click", function() {
+        var index = Math.floor(Math.random() * styles.length);
+        var url = "/jadelogy/" + styles[index] + (extension ? "#" + extension || "");
+        window.location.assign(url);
+    });
+    document.title = "玉学 - The Jadelogy";
+   
 </script>
 
 

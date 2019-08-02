@@ -23,7 +23,6 @@ The Jadelogy，即**玉学**。
         document.body.appendChild(anchor);
         anchor.click();
     }
-    
     var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
     document.getElementById("change-style").addEventListener("click", function() {
         var index = Math.floor(Math.random() * styles.length);
@@ -31,7 +30,7 @@ The Jadelogy，即**玉学**。
         window.location.assign(url);
     });
     document.title = "玉学 - The Jadelogy";
-   
+
 </script>
 
 
@@ -381,7 +380,29 @@ The Jadelogy，即**玉学**。
 
 ---
 
-# <span id="cleanlogy">洁学</span>
+# <span id="cleanlogy">The Cleanlogy</span>
 
 ---
+
+
+
+
+
+# <span id="refinelogy">The refinelogy</span>
+
+---
+
+
+
+
+
+
+
+# <span id="agilelogy">The Agilelogy</span>
+
+---
+
+
+
+
 

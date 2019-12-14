@@ -17,24 +17,22 @@ The Flintlogy，即**坚学**。
 <button id="change-style">更换一种显示风格</button>
 
 <script type="text/javascript">
-    var font = document.createElement("link");
-    font.href = "https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext";
-    font.rel = "stylesheet";
-    font.type = "text/css";
-    document.head.appendChild(font);
+    var extension = window.location.toString().split("#")[1];
+    if (extension) {        
+        var anchor = document.createElement("a");
+        anchor.href = "#" + extension;
+        anchor.style.display = "hide";
+        document.body.appendChild(anchor);
+        anchor.click();
+    }
     var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
     document.getElementById("change-style").addEventListener("click", function() {
         var index = Math.floor(Math.random() * styles.length);
-        var theme = document.createElement("link");
-        theme.href = "/arts/themes/" + styles[index] + ".css";
-        theme.rel = "stylesheet";
-        theme.type = "text/css";
-        document.head.appendChild(theme);
+        var url = "/arts/flintlogy/" + styles[index] + (extension ? "#" + extension : "");
+        window.location.assign(url);
     });
-    document.title = "坚学 - The Jadelogy";
+    document.title = "坚学 - The Flintlogy";
 </script>
-
-
 
 ---
 

@@ -26,11 +26,10 @@ The Jadelogy，即**玉学**。
     var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
     document.getElementById("change-style").addEventListener("click", function() {
         var index = Math.floor(Math.random() * styles.length);
-        var url = "/jadelogy/" + styles[index] + (extension ? "#" + extension : "");
+        var url = "/arts/jadelogy/" + styles[index] + (extension ? "#" + extension : "");
         window.location.assign(url);
     });
     document.title = "玉学 - The Jadelogy";
-
 </script>
 
 

@@ -59,14 +59,14 @@ Canton 有着悠久的历史和独特的文化，是杨雨露的故乡。Canton 
 
   玉指杨雨露的语文老师周小玉老师。她很可爱 2333
 
-  详见 [Jadelogy - 玉学主页](arts/jadelogy)
+  详见 [Jadelogy - 玉学主页](arts/jadelogy/light.html)
 
   *衍生*：
 
   - [洁学](arts/cleanlogy)
   - [斌学](arts/refinelogy)
   - [敏学](arts/agilelogy)
-  - [坚学](arts/flintlogy)
+  - [坚学](arts/flintlogy/light.html)
 
 ---
 

@@ -15,19 +15,19 @@ The Jadelogy，即**玉学**。
 <button id="change-style">更换一种显示风格</button>
 
 <script type="text/javascript">
-    var extension = window.location.toString().split("#")[1];
-    if (extension) {        
-        var anchor = document.createElement("a");
-        anchor.href = "#" + extension;
-        anchor.style.display = "hide";
-        document.body.appendChild(anchor);
-        anchor.click();
-    }
+    var font = document.createElement("link");
+    font.href = "https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext";
+    font.rel = "stylesheet";
+    font.type = "text/css";
+    document.head.appendChild(font);
     var styles = ["academic", "han", "light", "newsprint", "night", "pixyll", "scribble", "solarized", "whitey"];
     document.getElementById("change-style").addEventListener("click", function() {
         var index = Math.floor(Math.random() * styles.length);
-        var url = "/arts/jadelogy/" + styles[index] + (extension ? "#" + extension : "");
-        window.location.assign(url);
+        var theme = document.createElement("link");
+        theme.href = "/arts/themes/" + styles[index] + ".css";
+        theme.rel = "stylesheet";
+        theme.type = "text/css";
+        document.head.appendChild(theme);
     });
     document.title = "玉学 - The Jadelogy";
 </script>

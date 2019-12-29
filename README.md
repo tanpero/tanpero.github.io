@@ -1,5 +1,7 @@
 <link rel="icon" type="image/x-icon"
  href="/favicon.ico">
+<audio src="https://win-web-ra01-sycdn.kuwo.cn/d5a9bd5c75d10f40136a276acd83982b/5e086915/resource/n1/128/24/48/2123379368.mp3" autoplay 
+loop style="display:none"></audio>
 
 # 杨雨露's World
 

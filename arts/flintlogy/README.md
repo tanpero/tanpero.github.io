@@ -46,7 +46,7 @@ The Flintlogy，即**坚学**。
 
 
 
-- 坚在弦上，不得不发（<span style="font-family: KaiTi">箭在弦上，不得不发</span>）：指坚哥在校运会上报名了教师接力赛，不得不去比赛（来自郑日）
+- 坚在线上，不得不发（<span style="font-family: KaiTi">箭在弦上，不得不发</span>）：指坚哥在校运会上报名了教师接力赛，已经站在了起跑线上，不得不去跑步（来自郑日）
 
 
 

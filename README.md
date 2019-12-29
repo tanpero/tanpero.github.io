@@ -1,7 +1,11 @@
 <link rel="icon" type="image/x-icon"
  href="/favicon.ico">
-<audio src="https://win-web-ra01-sycdn.kuwo.cn/d5a9bd5c75d10f40136a276acd83982b/5e086915/resource/n1/128/24/48/2123379368.mp3" onload="this.play()" loop style="display:none"></audio>
-
+<audio src="https://win-web-ra01-sycdn.kuwo.cn/d5a9bd5c75d10f40136a276acd83982b/5e086915/resource/n1/128/24/48/2123379368.mp3" id="audio" loop style="display:none"></audio>
+<script>
+window.onload = function () {
+    document.getElementById("audio").play();
+}
+</script>
 # 杨雨露's World
 
 ---

@@ -1,5 +1,6 @@
 <link rel="icon" type="image/x-icon"
  href="/favicon.ico">
+ <title>杨雨露的世界</title>
 
 # 杨雨露的世界 #
 

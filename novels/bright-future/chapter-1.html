@@ -1,0 +1,817 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>chapter-1</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+;
+
+:root {
+  --active-file-bg-color: #dadada;
+  --active-file-bg-color: rgba(32, 43, 51, 0.63);
+  --active-file-text-color: white;
+  --bg-color: #fff;
+  --text-color: #333;
+  --side-bar-bg-color: #f5f5f5;
+  --control-text-color: #666;
+}
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  color: #333;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  font-size: 14px;
+  -webkit-font-smoothing: initial;
+}
+
+#write {
+  max-width: 960px;
+  padding-top: 2em;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: calc(100vh - 6em);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+.typora-node #write {
+  min-height: calc(100% - 6em);
+}
+
+pre.md-meta-block {
+  background: #f5f5f5;
+  padding: 1em;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+
+    #write {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body, #footer-word-count-info {
+      background: #f5f5f5;
+    }
+
+    body.pin-outline,
+    .pin-outline #footer-word-count-info,
+    .pin-outline footer {
+      background: #fff;
+    }
+
+    #write {
+      max-width: 1000px;
+      padding: 40px 60px;
+      background: #fff;
+      margin: 3em auto 3em;
+      border: 1px solid #ddd;
+      border-width: 0 1px;
+    }
+
+    .pin-outline #write {
+      max-width: 1000px;
+      background: #fff;
+      margin: 0 0 0;
+      border: 0;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    footer {
+      background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    body.pin-outline,
+    .pin-outline #footer-word-count-info,
+    .pin-outline footer {
+      background: #f5f5f5;
+    }
+
+    .pin-outline  #write {
+      max-width: 1000px;
+      padding: 40px 60px;
+      background: #fff;
+      margin: 3em auto 3em;
+      border: 1px solid #ddd;
+      border-width: 0 1px;
+    }
+
+    .pin-outline footer {
+      background-color: transparent;
+    }
+
+    #footer-word-count-info {
+      background: #f5f5f5;
+    }
+}
+
+
+/* 如果你的项目仅支持 IE9+ | Chrome | Firefox 等，推荐在 <html> 中添加 .borderbox 这个 class */
+html.borderbox *, html.borderbox *:before, html.borderbox *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+  font: 300 1em/1.8 "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+}
+
+body {
+  font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "TimesNewRomanPS-ItalicMT", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+  /*font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;*/
+  -webkit-font-smoothing: initial;
+  font-weight: 100;
+  color: var(--text-color);
+  line-height: 1.35; 
+  font-variant-numeric: lining-nums;
+  margin-bottom: 1em;
+}
+
+em {
+  font-family: Georgia-Italic, STSongti-SC-Light, serif;
+}
+
+strong em,
+em strong {
+  font-family: Georgia-BoldItalic, STSongti-SC-Regular, serif;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* 去掉各Table cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 去除默认边框 */
+fieldset, img {
+  border: 0;
+}
+
+/* 块/段落引用 */
+blockquote {
+  position: relative;
+  color: #999;
+  font-weight: 400;
+  border-left: 1px solid #1abc9c;
+  padding-left: 1em;
+  margin: 1em 3em 1em 2em;
+}
+
+@media only screen and ( max-width: 640px ) {
+  blockquote {
+    margin: 1em 0;
+  }
+}
+
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym, abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr {
+  cursor: help;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul, ol {
+  list-style: none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+:root sub, :root sup {
+  vertical-align: baseline; /* for ie9 and other modern browsers */
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a {
+  color: #1abc9c;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#write a {
+  border-bottom: 1px solid #1abc9c;
+}
+
+#write a:hover {
+  border-bottom-color: #555;
+  color: #555;
+  text-decoration: none;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins, a {
+  text-decoration: none;
+}
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
+}
+
+/* 代码片断 */
+pre, code, pre tt {
+  font-family: Courier, 'Courier New', monospace;
+}
+
+#write .md-fences {
+  border: 1px solid #ddd;
+  padding: 1em 0.5em;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 一致化 horizontal rule */
+hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 0.8em;
+  height: 10px;
+}
+
+#write strong {
+  font-weight: bolder;
+  color: #000;
+}
+
+.code-tooltip.md-hover-tip strong {
+  color: white;
+}
+
+/* 保证块/段落之间的空白隔行 */
+#write p, #write .md-fences, #write ul, #write ol, #write dl, #write form, #write hr, #write figure,
+#write-p, #write-pre, #write-ul, #write-ol, #write-dl, #write-form, #write-hr, #write-table, blockquote {
+  margin-bottom: 1.2em
+}
+
+html {
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+}
+
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6,
+#write-h1, #write-h2, #write-h3, #write-h4, #write-h5, #write-h6 {
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+  color: #000;
+}
+
+#write h1, #write-h1 {
+  font-size: 2.4em;
+  padding-bottom: 1em;
+  border-bottom: 3px double #eee;
+}
+
+#write h2, #write-h2 {
+  font-size: 1.8em;
+}
+
+#write h3, #write-h3 {
+  font-size: 1.6em;
+}
+
+#write h4, #write-h4 {
+  font-size: 1.4em;
+}
+
+#write h5, #write h6, #write-h5, #write-h6 {
+  font-size: 1.2em;
+}
+
+/* 在文章中，应该还原 ul 和 ol 的样式 */
+#write ul, #write-ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+
+#write ol, #write-ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+
+#write li ul, #write li ol, #write-ul ul, #write-ul ol, #write-ol ul, #write-ol ol {
+  margin-bottom: 0.8em;
+  margin-left: 2em;
+}
+
+#write li ul, #write-ul ul, #write-ol ul {
+  list-style: circle;
+}
+
+
+#write table th, #write table td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666;
+}
+
+#write table .md-table-edit th {
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+#write table th, #write-table th {
+  background: #fbfbfb;
+}
+
+#write table thead th, #write-table thead th {
+  background: #f1f1f1;
+}
+
+#write table caption {
+  border-bottom: none;
+}
+
+#write em {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+li>p {
+    margin-bottom: 0 !important;
+}
+
+/* Responsive images */
+#write img {
+  max-width: 100%;
+}
+
+a.md-toc-inner {
+    border-bottom: 0 !important;
+}
+
+.md-toc-h1:first-of-type:last-of-type{
+  display: none;
+}
+
+.md-toc {
+  font-size: inherit;
+}
+
+.md-toc-h1 .md-toc-inner {
+  font-weight: normal;
+}
+
+.md-table-edit th {
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.mac-seamless-mode #write {
+  min-height: calc(100vh - 6em - 20px);
+}
+
+.typora-quick-open-item.active {
+    color: var(--active-file-text-color);
+}
+
+*.in-text-selection, ::selection {
+    background: var(--active-file-bg-color);
+    text-shadow: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #2d2d2d;
+    border-color: #020202;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #4e4c4e;
+    border: #4e4c4e;
+}
+
+#preference-dialog .modal-content{
+  background: #6e757a;
+  --bg-color: #6e757a;
+  --text-color: #f1f1f1;
+  color: #f1f1f1;
+}
+
+#typora-source,
+.typora-sourceview-on  {
+  --bg-color: #eee;
+  background: #eee;
+}
+
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+    color: #116098;
+}
+
+.cm-s-typora-default .cm-link {
+    color: #11987d;
+}
+
+.cm-s-typora-default .cm-em {
+  font-family: Georgia-Italic, STSongti-SC-Light, serif;
+  color: #6f6400;
+}
+
+.cm-s-typora-default .cm-em{
+    color: rgb(0, 22, 45);
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
+    border-left: 3px solid #6e757a;
+}
+
+.cm-s-typora-default .CodeMirror-selectedtext,
+.typora-sourceview-on .CodeMirror-focused .CodeMirror-selected {
+    background: #6e757a;
+    color: white;
+}
+
+.file-node-icon.fa.fa-folder:before {
+  color: rgba(32, 43, 51, 0.49);
+}
+
+#preference-dialog .megamenu-menu-panel h1 {
+  margin-bottom: 1em;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+  background: transparent;
+}
+
+/*.file-node-icon.fa.fa-folder:before {
+  content: "\f114";
+}
+
+#typora-sidebar {
+
+}*/
+
+/*.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+  color: #fffff1;
+}
+
+.cm-s-typora-default .cm-link {
+    color: #86f9e2;
+    color: #e5f7eb;
+}
+
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
+    color: rgb(255, 199, 199);
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+    color: #dec4c7;
+}
+
+.cm-s-typora-default  .cm-em {
+  font-family: Georgia-Italic, STSongti-SC-Light, serif;
+  color: #f3ff7e;
+}
+
+.typora-sourceview-on .CodeMirror-cursor {
+  border-left: 3px solid #ffffd6;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
+  background: #505050;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-variable,
+.typora-sourceview-on .cm-s-inner .cm-operator,
+.typora-sourceview-on .cm-s-inner .cm-property {
+    color: #b8bfc6;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-keyword {
+    color: #C88FD0;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-tag {
+    color: #7DF46A;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-attribute {
+    color: #7575E4;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-string {
+    color: #D26B6B;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-comment,
+.typora-sourceview-on .cm-s-inner.cm-comment {
+    color: #DA924A;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-header,
+.typora-sourceview-on .cm-s-inner .cm-def,
+.typora-sourceview-on .cm-s-inner.cm-header,
+.typora-sourceview-on .cm-s-inner.cm-def {
+    color: #8d8df0;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-quote,
+.typora-sourceview-on .cm-s-inner.cm-quote {
+    color: #57ac57;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-negative {
+    color: #d95050;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-positive {
+    color: #50e650;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-string-2 {
+    color: #f50;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-meta,
+.typora-sourceview-on .cm-s-inner .cm-qualifier {
+    color: #b7b3b3;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-builtin {
+    color: #f3b3f8;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-bracket {
+    color: #997;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-atom,
+.typora-sourceview-on .cm-s-inner.cm-atom {
+    color: #84B6CB;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-number {
+    color: #64AB8F;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-variable {
+    color: #b8bfc6;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-variable-2 {
+    color: #9FBAD5;
+}
+
+.typora-sourceview-on .cm-s-inner .cm-variable-3 {
+    color: #1cc685;
+}
+
+.typora-sourceview-on .CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid #b8bfc6;
+    z-index: 3;
+}
+
+.cm-s-typora-default .CodeMirror-selectedtext,
+.typora-sourceview-on .CodeMirror-focused .CodeMirror-selected {
+  background: #212324;
+}
+
+.typora-sourceview-on .CodeMirror-linenumber {
+    color: rgb(255, 255, 255);
+}*/
+
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node first-line-indent'><h1><a name="chapter-1-借一蓑烟雨" class="md-header-anchor"></a><span>Chapter 1 借一蓑烟雨</span></h1><hr /><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n2"><a class="md-toc-inner" href="#chapter-1-借一蓑烟雨">Chapter 1 借一蓑烟雨</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n193"><a class="md-toc-inner" href="#section-1-前程面馆">Section 1 前程面馆</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" href="#section-2-莫名其妙的缘分">Section 2 莫名其妙的缘分</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n82"><a class="md-toc-inner" href="#section-3-冤家路窄">Section 3 冤家路窄</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n120"><a class="md-toc-inner" href="#section-4-靠近">Section 4 靠近</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n187"><a class="md-toc-inner" href="#section-5">Section 5</a></span></p></div><hr /><p>&nbsp;</p><h2><a name="section-1-前程面馆" class="md-header-anchor"></a><span>Section 1 前程面馆</span></h2><p>&nbsp;</p><blockquote><p><em><span>【作者有话说】大哥，你的重点有点不太对啊哈哈哈哈。</span></em></p></blockquote><p>&nbsp;</p><h2><a name="section-2-莫名其妙的缘分" class="md-header-anchor"></a><span>Section 2 莫名其妙的缘分</span></h2><p><span>赵瑾，猛地将碗拿起来，飞速的将面扒进嘴里，把面吃了个干净。然后将面的钱压在桌子上，把在地上的书包往肩上一抡，以最快的速度冲出面馆，一溜烟的跑了。钱小程愣了愣，回过神来，迅速追出去，此时人早已消失的无影无踪。</span></p><p><span>跑了？就这么跑了！怎么就跑了呢？真是个有趣的人。钱小程望着街道，轻笑一声，转身走回店里拿她的书包。而另一边，赵瑾在十字路口停下来，双手半蹲，抓住膝盖骨，大口地喘着气。冷汗大滴大滴地打在路面上。</span></p><p><span>受不了了，太可怕了。这才刚认识，就这么开玩笑？果然还是不能和陌生同龄人好好相处么。太难了，真的难了。为什么她要那么多话啊？人家好像也没说什么。啊啊啊啊好烦啊！</span></p><p><span>赵瑾烦躁地擩了把自己的短毛，翻出手机，点开何炀的聊天页面。昨晚的那条消息映入眼帘：“小瑾，你要学会接受别人的热情，不要太冰冷了。学会接受他人的善意。别害怕，勇敢点。”她叹了口气，在轻触电话键之前，脑内有一个声音一闪而过。</span></p><p><span>“赵小姐，很遗憾地告诉您，您的女儿，有中度的自闭症。”</span></p><p><span>怎么又想起这个了？</span></p><p><span>怎么又走进这个死胡同了？</span></p><p><span>赵瑾摁熄屏幕，把手机扔进口袋，有些无力地走向学校。</span></p><p><span>秋风卷起地上的落叶，散在路上，铺出一条路，斑驳的黄色映着艳阳，泛起一层金色。</span></p><p><span>赵瑾愣了愣，不由地低下头，嘲弄了自己一番。</span></p><p><span>有些事总得去做的，有些人也总要去面对的。好坏与否，每个人都是要经历的。更不是一句我害怕就能逃避的。总要学会走出去。所以别害怕。路就在前方。她踩着一路的落叶，跑向了阳光。</span></p><p><span>廖远桐和林晓晴拼命地幻想着，校园新生活的美好种种。钱小程失神地跟在后边儿。她不断回想起今早的情景。榕树下的女生很高，头发齐耳，黑色的球鞋映衬着两条白哲的腿。薄薄的眼镜架在高挺的鼻梁上，节骨分明的手指握着手机。风拂过，吹起她的碎发。她将碎发往耳后一挽，顺势将耳机扣在耳上。她在店的门口踱来踱去，微微蹙起眉间倒是增添了一丝清冷。</span></p><p><span>若是还能见到她，一定要她成为朋友呢。</span></p><p><span>“1721……1721…在哪儿呢？”钱小程喃喃道。铁三角根据校园里的指示牌走，一会儿走到东门，一会儿走到实验楼，兜兜转转怎么都找不到教室1721。</span></p><p><span>钱小程眼尖地撇见那排教学楼。“嘿！这儿，这儿，这儿上去应该就是1721了。”钱小程呼喊着，向楼跑去。</span></p><p><span>“傻么你，1721不是1楼么。”林晓晴翻了个大大的白眼。但也跟了上去。留下廖远桐一个人在原地扶额。都多大的人了？还像两个小孩儿似的东奔西跑。</span></p><p><span>“同学，打扰一下。”</span></p><p><span>“嗯？”</span></p><p><span>“请问你知道教室1721怎么走么？”</span></p><p><span>廖远桐的肩膀被轻轻一拍，低沉而温柔的嗓音入耳。男生长得干净，一点也不秀气。剑眉鹰目，眸中间杂着光，眨眼间长长的眼睫微微翘起，像是一把宝剑初露锋芒，诠释了什么叫做“恰似少年，风华正茂”。</span></p><p><span>“同学？嗨？有在听我说话吗？”钟子轩见这姑娘没了反应，便凑上前去拿手在她眼前晃了晃。</span></p><p><span>廖远桐回过神来，往后倒退了一步，脸微微一红，两手拘谨地握在一起。</span></p><p><span>这距离，太近了吧？</span></p><p><span>“我……我也是1721的，要不一起去？”廖远桐有些许窘迫，尴尬地朝钟子轩笑了笑，挽了挽头发，努力营造一个得体大方的形象。不过钟子轩内心毫无波澜，只是微微颔首以示赞同。</span></p><p><span>钱小程坐个子不矮，坐最后一排完全没有任何的问题，根本不存在被前面的人挡着看不到黑板的问题，而且位置靠窗空气清新，倒是个风水宝地。于是大长公主心情甚好，百般无聊地一手卷着自己的头发把玩，另一只手转着笔。还有一下没一下地敲击着桌面。她初中的翘凳子的坏习惯也跟着走进高中的校园，一脚抵着桌退上的横杆，另一脚往后一蹬，身体向前一倾，整个人一晃一晃的。班里陆陆续续有新生报道，眼看着前后左右都坐满了，唯独她旁边空无一人。平时周围人声鼎沸的她仿佛成了这班里最孤寂落寞的人。她依旧晃着凳子，盯着门口。只要是进入教室的新生，她都盯着人家看。无比期盼下一个进入教室的人是她的同桌。但事与愿违，进门的新生往往都绕着她坐到了其他人的身边。前排两位坐在一起的闺蜜聊的热火朝天。而右手边那位和廖远桐一起进来的男生看《马克思主义哲学》看的入迷，着实不忍前去打扰。环顾四周，大家都扎着堆儿，实在是实在是不太方便横插进去。</span></p><p><span>“怎么还不来啊……”钱小程忍不住嘟囔，脸上有了些许愠色。当她想起身去找林晓晴她们的时候，一位看上去有点年纪的老人家走进了教室。老人家眯着眼睛，没什么表情看上去有点严肃，钱小程不自觉地坐正。老人家扫视了一圈，一句话也没说。整个班迅速安静了下来。然而，一声报告打破了班里的沉寂。</span></p><p><span>赵瑾跑到门口，半弯着腰，扶着门框，大口大口地喘着气。全班学生向赵瑾投向了目光，大家都细细地打量着这位迟到的新生。赵瑾登时觉着胸口上压了块儿很沉重的石头，让她呼吸更加困难。她无法忍受那像聚光灯般审视的目光。她一直告诉自己，要给大家留下一个好印象，以便后日的相处仍能愉快。在教学楼门口纠结半天，但还是迟了。老人家没有说一句话，向赵瑾徐徐前去，还顺了顺赵瑾的后背。</span></p><p><span>“三中大，多走走，总能熟悉的。”</span></p><p><span>赵瑾抹了把脸点了点头，双目有些无神地走到自己的位置。她脸色很不好，嘴唇也有些泛白，冷汗不停地再出，后背都有些浸湿了，心脏一直在怦怦直跳，久久无法平息。</span></p><p><span>很多年后，钱小程偶然问起赵瑾为什么会愿意承担老人家治疗的所有费用。赵瑾都只是摇摇头，并没有告诉她。没有一个普通人能知道，一句能缓解尴尬的话对一位社恐人士来说有多么重要。毕竟没有任何一个人能够做到真正的感同身受，况且察言观色，善解人意，并不是每个人都能具备的能力。虽然这并不难，没人愿意罢了。当然这也都是后话了。</span></p><p><span>钱小程贴心地给她同桌拉开椅子，赵瑾似乎在神游，她甚至连同桌是谁都没怎么注意，机械地说了声谢谢就坐下了。</span></p><p><span>过了会儿，神志恢复的赵瑾，松开刚才紧紧攥着背包肩带的手。两手合在一起，松了松手骨。她忽然感受到了一股视线在向她放射，猛地向左一看。钱小程正向她挑着眉，转着笔，伸出了一只手。</span></p><p><span>“嗨，空调哥。咱们又见面啦！想不到吧？”</span></p><p><span>当然想不到。怎么又是你？世界这么小的吗？我其实并不是很想见到你。</span></p><p><span>赵瑾面无表情，但内心却十分抽搐地看着那只悬空着的手。</span></p><p><span>她从小就自我封闭，不与人亲近，更害怕与人有任何亲密接触。小时候，赵清晏为了治疗女儿的自闭症，曾多次带着何炀和赵瑾出去玩儿。何炀怕丢了赵瑾，于是一路牵着赵瑾的手。赵瑾有无数次想挣脱，但何炀就是死死攥着。她从小就很听话，也很懂事，知道此时大力甩开何炀闹的不愉快是在驳母亲的面子。她的内敛，克制让她一直忍住没有表现出任何的不满情绪。但事后，那只被何炀牵着的手瘙痒无比，很难受。像是过敏，赵瑾为了止住这种痒意常常抓它。庆幸当时还小，半大的孩子也没什么力。但是皮肤稚嫩，没抓几下便红了。后来大了一点，就换了一种方式，用大量的冷水冲洗被旁人长时间触碰过的地方。天气冷的时候，常被冻得发紫。何炀也是观察了很久才发现的，从那以后，不知道是大了知道男女有别还是善解人意，何炀都没有近距离接触过赵瑾。然而上了初中之后干脆装个哑巴，不必交什么朋友。反正过了一个学期又要换一座城市。一切都是陌生的，从头开始并无差别。</span></p><p><span>赵瑾进行激烈的思想斗争，反复挣扎，总算下定决心迈出那一步。正当她要回握的那一刻，钱小程甩了甩手收回去了，留下她的悬在半空。场面又一度陷入僵局，赵瑾感觉自己的呼吸都停滞了。你这是玩儿哪出？</span></p><p><span>“噗。”钱小程看着她发红的耳尖，忍不住轻笑一声。她往后一倒，靠在椅子上捂着嘴笑。</span></p><p><span>赵瑾面露菜色，正想把手收回去，却被钱小程一把握住。</span></p><p><span>“你好，我是钱小程，交个朋友吗？”</span></p><p><span>少女眉眼弯弯，带着明媚的笑意，很是好看。赵瑾一下愣住了，没有一个人主动提出和她成为朋友，更没有人任何人愿意伸出一只手，握住她的手。</span></p><p><span>朋友么？没有过。会搞砸的。一定会的。</span></p><p><span>赵瑾用力抽离出自己的手，眼眸微垂，看上去又拽，又不耐烦。踌躇了半天，纳纳地吐出几个字：“我不会。”</span></p><p><span>“不会什么？”钱小程有些奇怪，眼前这个人似乎十分抗拒她的主动，而且这个高贵冷艳的表情，真的让人很想打她。</span></p><p><span>“交朋友。”赵瑾努力想把自己的想法表达出来。她觉得用长句解释会显得人特别婆妈啰嗦，所以直接三个字回复，简明扼要。但想法总与现实背道而驰。弄巧成拙地让人以为她是在敷衍。直到后来两人回母校探望师长的时候，回忆初见时的过往，钱小程才知道当初赵瑾居然是在认真的回答她的每一个问题。</span></p><p><span>“？”钱小程有点懵逼，交朋友还有什么会不会的吗？</span></p><p><span>赵瑾有些着急了，眉头紧锁，想说些什么却一个字儿都吐不出来。那表情，感情像是在压着火气，快到爆发边缘了。钱小程倒是第一次在交友上碰壁，这成功激起了钱小程的挑战欲。还拿不下你了！还不信交不成朋友了？真是的，高岭之花怎能孤芳自赏呢？</span></p><p><span>“我想和你交朋友，你愿意点个头，不愿意当我放屁。清楚了吗？”</span></p><p><span>“清楚。”</span></p><p><span>赵瑾想都没想就说了清楚，点了个头，她自己也不知道怎么回事。完全未经大脑思考，哦不，她的大脑早就停止思考了，傻傻地被钱小程牵着鼻子走。</span></p><p><span>你清楚个屁啊……钱小程有点纳闷，这人怎么这么费劲儿啊……</span></p><p><span>“所以我们现在是朋友了，你是不是也该告诉我你的名字了？”钱·大长公主·小程第一次收敛了公主脾气，如此耐心地引导着高冷美女跟自己交朋友。</span></p><p><span>“是朋友了？”赵瑾眉间一挑略带点儿不可思议，微微勾起嘴角，瞬间又压了一下去，抿成一条平线。</span></p><p><span>“头你也点了，手你也握了，你还想抵赖？”钱小程故意逗她，流氓似的搭在人家椅子上。</span></p><p><span>赵瑾条件反射地往后一躲，涨红了脸，毛躁地揉了把头发，很是不知所措，十分含糊地应了一句：“哦。”</span></p><p><span>噗，真像只被人莫名其妙擩了一把毛的惊鸟。</span></p><p><span>“咳咳！”</span></p><p><span>老人家半眯着眼睛，清了清嗓子，成功完美的打断了钱大长公主勾搭同桌。</span></p><p><span>“我姓傅，叫傅仁礼。声明一点我不是你们的班主任，你们现在坐在这儿的这个班级也不是你们最终所在的班级。下周就是分班考了，我想说的是，诚信乃人安身立命之本，人无信不立。想要做学问之前，你首先得知道人怎么做。我不希望到时候在这个考场上看到作弊现象。作弊者一律校级处分，作弊科目零分处理。当然你也不需要紧张，机会只留给有准备的人希望各位全力以赴。”傅仁礼虽两鬓微霜，但中气十足，句句字正腔圆。</span></p><p><span>“现在按照你们的学号上来领资料，然后自习。讨论问题小点儿声！”</span></p><p><span>按照三中传统，所有新生会在正式开学前两个星期回校报道，准备分班考。但分班考的实质是划分等级，初次预判学生平均水平从而分配师资。AB两个竞赛班为全年级的前一百名，50人一个班。而第二档次的CD班为鸿志班全年级的101到200名，剩下的12个班均为普通班。但一次考试并不能说明什么问题，所以三中历年执行的是轮班制。每个学期会有一次四校联考以及一次全县期末考，每次大考重新排名，重新排班，从而达到筛选最优异的尖子生，保障升学率高的目的。这也就是三中迄今为止经历90年风雨仍是平城第一重点中学的主要原因。每年只要是进了三中A班的学生，哪怕是A班的最后一名，都绝对可以高过重本线，三中学生皆以考进A班为荣。每次大考都将是一次分水岭的划分，竞争愈来愈激烈。</span></p><p><span>钱小程脑子一嗡，整个人倒在桌子上了。完蛋了，浪了一个暑假，语文古诗鉴赏，英语单词，政治性质意义全都忘得云霄九外了。三中高手如云，紧靠理科估计前200名都撑不到。因为平时被人宠上天，一个人占一大张桌子，此刻的钱小程一只手直接搭在赵瑾桌上，如大字上一半似的，贴在桌子上。赵瑾想写东西，但又不知如何开口，纠结半天，说也不是不说也不是。无语地看着八爪鱼似的钱小程。钱小程猛地弹起来，着实地吓了赵瑾一跳。她好像回想起什么似的：“你还没告诉我你的名字！”</span></p><p><span>赵瑾眼皮也不抬一下，低头下去捡起方才被钱小程吓得脱手的笔，沉声道：“赵瑾。”</span></p><p><span>“哪个瑾？前程似锦的锦吗？”</span></p><p><span>“……”赵瑾随手扯了张草稿纸，将自己的名儿写上。</span></p><p><span>“啊，这个瑾啊。你字儿挺不错的蛤。好看，有力度。”钱小程把名儿凑到眼前，看了又看，想研究书法家真迹似的。</span></p><p><span>赵瑾深吸了口气，捂了捂眼睛。这人怎么这样？有什么好看的。有这么把别人的名字看来看去的嘛。靠。</span></p><p><span>“噗哈哈哈，你好害羞啊。”</span></p><p><span>“……”</span></p><p><span>这人什么毛病啊……</span></p><p><span>“赵瑾是吧，我记住了！”钱小程云淡风轻地撕下赵瑾的名字，当着赵瑾的面儿，放进笔袋里。</span></p><p><span>钱小程是吧，我也记住你了！我记住了，你就是朵奇葩！</span></p><p>&nbsp;</p><h2><a name="section-3-冤家路窄" class="md-header-anchor"></a><span>Section 3 冤家路窄</span></h2><p>&nbsp;</p><p><span>番外大概就是缘分吧？</span></p><p><span>赵瑾坐在桥墩，伸了伸懒腰，低了低头，乌篷船在漂游。摇橹的人在船上轻哼着，木桨划入水中，两岸照影便碎成水纹。岸势如蛇蜿蜒过岸边，石板桥架在上边儿，来往的人儿，在桥上络绎不绝。夕阳点燃了粉墙黛瓦与亭台楼阁。天色正好何炀举着单反想记录此时的美景。镜头里女孩儿肤白如瓷，稚嫩的脸颊泛着浅浅的粉色，深色漠然，眉眼深邃似江海，正端视那乌篷船。赵瑾踢了踢，脚下绿波荡漾，乌篷在不远处停舶，船尾停了了只鸬鹚，在夕阳下眯着眼，懒散地扇了扇双翅，似乎享受着黄昏光洒大地的欢愉。摇橹的人扔了一条鱼，鸬鹚伸了伸脖颈，猛地一扎入水。摇橹的人吹了声口哨，鸬鹚徐徐游来。</span></p><p><span>“小瑾！看这儿！笑一个嘛！”</span></p><p><span>赵瑾抬了抬眼皮，在何炀身上停留片刻，便将移开了目光。</span></p><p><span>“小瑾！苏城漂亮吧？”何炀赤着脚，踩着青石板，跑过来，一屁股坐下，一脚踩进水里，激起素浪，一旁的的花草都湿了一片。</span></p><p><span>“或许。”赵瑾轻轻地耸了耸肩，反正她在每个城市都不会停留太久，美不美没什么所谓，像是烟火转瞬即逝。</span></p><p><span>“什么叫或许啊？别老这么高深莫测好不好。走走走，去那儿看看有什么卖的。”何炀扯了扯赵瑾的衣袖，把赵瑾强行拉起。真不敢牵着块小木头的手啊，上回那小脸儿板得可严肃了，看上去老不开心了。这不，小木头今天稍有兴致，得带她去见见世面。</span></p><p><span>那是间寄明信片的地儿，傍水而建，门口还竖着个大大的红邮筒。赵瑾在门口瞧了瞧，推开门，风儿夹杂着一江春水。赵瑾走进去转了一圈儿，其实没什么特别的，人也不多。店主个头发花白，白胡子微微翘起的老爷子，他倚在椅子上摇着他的大蒲扇。店内明信片各式各样，全是苏城特色景点。琳琅满目地，让人眼花撩乱。赵瑾精挑细选好奇地踮起脚尖左顾右盼，小眼神儿锐利的很，一眼便相中了张特别的。她绷直了手臂去取，可就是够不着柜子高层的那张明信片。何炀瞧见，撒着丫子跑过来，抱起赵瑾将她举起。7、8岁的小孩儿哪有什么力气啊……</span></p><p><span>“你快拿……我撑不住了！”何炀使出吃奶的劲儿，呜咽着。</span></p><p><span>“你放我下来。”</span></p><p><span>呼……真是松了口气。赵瑾将明信片高高举起，观赏了好一番。明信片是木质的，雕刻着苏城一座较为著名的石板桥。赵瑾摩挲了一番，很是满意。</span></p><p><span>“你挑了半天，就这？一张？”</span></p><p><span>“嗯。”</span></p><p><span>赵瑾微微颔首，慢条斯理地去付钱。</span></p><p><span>而这时，房梁上挂着的风铃作响，一个小女孩儿和她的父母走进来。女孩儿穿着小裙子，不过湿了半边儿，兴许是戏水了。</span></p><p><span>“爸爸！我要这个！这个可好看了！”女孩儿童声脆如银铃，举着一张木制明信片在她父母前晃悠。她的父亲揉了揉女孩儿的小脑袋，沉声闷笑：“好，小程想买什么就买什么。爸爸去给你付钱，你写完，塞进红邮筒，这样它就会漂洋过海地到咱们家啦！”男人的妻子满眼笑意，牵起女儿的手，抱着女儿坐上小高凳。男人走到收银台将前压在桌面儿上。</span></p><p><span>赵瑾眼底黯然失色，眸中含着慕艳之意。她学着男人把钱压在桌上，爬上小高凳。坐在女孩儿的旁边默不作声，拿着笔，却不动，反而望着窗外，装作思考这什么，可余光却小心翼翼地瞄着一旁的小女孩儿。</span></p><p><span>“宝贝，写句祝福语吧！”</span></p><p><span>小女孩儿一笔一画地写着诚挚的祝愿。</span></p><p><span>赵瑾学着，在明信片写下几个字。</span></p><p><span>“宝贝你还差地址没写呢。”</span></p><p><span>女孩儿又写下地址。赵瑾看着对方写下地址，傻傻地跟着写了人家的地址………检查都没检查，隔壁的女孩儿朝着她瞥了一眼，内心觉着心虚，像风一样冲出去，塞进红邮筒，像做贼似的。忽然晃过神来，才想起，自己写了别人的地址。眼巴巴地望着红邮筒，垂下脑袋。不过，很快又抬起头来走进店里把店里的何炀领出来。</span></p><p><span>反正，没几个月就要搬一趟家，寄到哪儿都没什么所谓……</span></p><p><span>只不过……某天钱小程在自个儿家收到了两张一样的木质明信片，一张是自己的，一张是一位陌生人写的。陌生人的自己娟秀，笔锋很轻，稚嫩得很。这到底是谁的啊……为此还懊恼一番呢。</span></p><p><span>多年后……</span></p><p><span>“你还记得你当年傻啦吧唧地写了我家地址么？”</span></p><p><span>钱小程懒懒地倚在赵瑾身上，赵瑾轻轻拖住钱小程，在一张木质的明信片写了几行字，沉声道：“不记得了……”</span></p><p><span>“骗人！”</span></p><p><span>“噗……”</span></p><p><span>三张明信片摆在了一起，两张斑驳泛黄，一张崭新干净。</span></p><p><span>上面只有几行字。</span></p><p><span>祝天空湛蓝如洗！</span></p><p><span>祝大海浅淡云添！</span></p><p><span>祝我们平安顺遂，携手白头。</span></p><p><span>兜兜转转，竟是重逢，缘分大概就是这么奇妙吧？</span></p><p>&nbsp;</p><h2><a name="section-4-靠近" class="md-header-anchor"></a><span>Section 4 靠近</span></h2><p><span>赵瑾告别钱小程，麻木地将钥匙插入锁口。到家却没开灯，屋内也没拉窗帘。她拖了鞋，赤着脚踩在冰冷的地板上，缓缓走过去，敞开了阳台的玻璃门。光很不守规矩，哪儿有地儿就往哪儿跑，于是地板上就映上了薄薄的银晖。她接了杯冷水，吨吨吨地灌下，抬了抬眸，扫了眼月亮洒下一片月色。</span></p><p><span>赵瑾不喜欢光，光总是刺眼的，总是会聚焦在身上，滚烫着，从精神到肉体全面贯彻。怦怦怦……心跳总在不由地加速。这种感觉令人难受，实在是太难受了。可是她更不喜欢黑暗。即使习惯了将自己处于一片漆黑之中，躲避着，逃脱着，但是却无法抗拒不发自主地去寻找着光。</span></p><p><span>又是一间只有她自己的房子，房子明明有两间卧室，却只住着一个人。另一个人从来都不回来，那个房间从来都是空着的，保持着这种状态都已经有七八年了。</span></p><p><span>赵瑾沉默地看着外边儿的月亮，茶几上的手机震动了一声，打破了这份寂静。赵瑾眸中毫无一丝波澜，她摁熄屏幕，又喝了杯冷水。茶几上的手机又震动了一声。赵瑾仍是无动于衷。茶几上的手机直接显示电话了，赵瑾才像晃过了神一样，慌忙地在书包翻找眼镜，一个不小心脚踩岔了，茶几的腿儿磕到了脚踝。</span></p><p><span>”小瑾，出什么事儿了？信息又不回，打你电话这么久才接？”电话的那头都急成热锅上的蚂蚁了，何炀火急火燎地问。</span></p><p><span>“没事儿。”赵瑾沉默了很久，嗓音有些嘶哑，说得很缓，很轻，很平，语气中听不出任何情绪。</span></p><p><span>“今天还顺利吗？”何炀就着对死党的了解初步判断对方此时情绪应该确实没什么波澜，今天过的大概还算过得去，但还是小心翼翼地打探了下。</span></p><p><span>“嗯。”赵瑾闷声，片刻才吐出这么一个字。</span></p><p><span>得了，看来是不怎么样了。何炀挠了挠头，猜测了下大概是跟同学相处得不怎么愉快吧。</span></p><p><span>“你同学人怎么样？他们没欺负你吧？”</span></p><p><span>“……”对面忽然安静来了下来，只能听到呼呼的晚风声。</span></p><p><span>得了，还真被人欺负了。何炀闭了闭眼，不禁地的担忧，他迅速打开电脑搜了搜赵瑾所在的学校，打开了学校的官网看一遍资料，打算准备让人帮他办转学手续了。</span></p><p><span>“没。”赵瑾开口又吐出了一个字。</span></p><p><span>“有交朋友。”赵瑾慢悠悠地说。</span></p><p><span>何炀顿了顿，心中不禁有了疑虑，交朋友？小瑾主动交朋友了？这……</span></p><p><span>“你主动？”</span></p><p><span>“……”又沉默了，看来是被动的。</span></p><p><span>“我没试过，不会。”</span></p><p><span>“你放屁，我不是你朋友哦？”</span></p><p><span>“噗……”赵瑾短促地笑了一声，短到她自己都毫无意识。</span></p><p><span>？什么？小瑾这是笑了？这人居然会笑的吗？</span></p><p><span>“你居然笑了！你今天心情很好嘛。”</span></p><p><span>“没。没笑。”赵瑾皱了皱眉，“教我。”</span></p><p><span>“？教啥？”孩子彻底疑惑了，他这奇葩的死党，不仅性格古怪，话还少得可怜，说的还慢，词与词都连不在一起，没头没尾的，听的很是辛苦。何炀捂了捂脸，大概也就只有自己能忍得了赵瑾这块小木头的脾气了吧，他这么想着。</span></p><p><span>“交朋友。”赵瑾简明扼要道。</span></p><p><span>“蛤？”</span></p><p><span>赵瑾走出了阳台，静静地听着何炀讲技巧，略微勾了勾嘴角。</span></p><p><span>今夜的风似乎很温柔呢。</span></p><p><span>次日5:30分，天还没亮，但秉持着以往的好习惯，赵瑾换好了运动服准备下楼晨跑。塞上了，每日的早餐新闻必不可少，她拉开房内的窗帘，看见隔壁灯已经亮起来了。</span></p><p><span>两家挨得很近，近到伸伸手便能打开对方的窗户。两张书桌都对着窗户，只不过俩人昨晚没拉开窗帘没发现罢了……</span></p><p><span>“listentotheconversationandanswerthequestionsbelow……”</span></p><p><span>大长公主支着脑袋，打了个哈欠，眼睛还眯着，录音机就放起了新概念。</span></p><p><span>要不要叫她一起下去？这样听一点效果都没有，都快睡过去了。算了吧，也不是很熟，不愿的话尴尬的又是我。你不是要和人做朋友么，做朋友的第一步难道不是和朋友一起锻炼么……是吧？何炀昨晚是这么说的吧？</span></p><p><span>空调犹犹豫豫陷入沉思，站在窗口踱来踱去。</span></p><p><span>砰！钱小程打了个哈欠道：“这么早啊？”</span></p><p><span>赵瑾的窗被打开，不知不觉中，半睡半醒的长公主已经换好校服了。</span></p><p><span>赵瑾愣了几秒。你不是刚还困着么，这就醒了？她点了点头，用手指别扭地挠了挠后脑勺。刚想说什么，一下子全堵在喉咙那儿。场面一度陷入尴尬。</span></p><p><span>“跑步么？”</span></p><p><span>平城晨雾弥漫，初日升起，光透过云层晕染着天边，早上湿气重，水蒸气凝结在枝叶上，风一吹，水滴便自由落下，滴在地面上，在路面上落下圈圈点点的水渍。街道空无一人，枝头的鸟儿也似乎还没起，静谧地窝在巢中安眠。</span></p><p><span>赵瑾塞着耳机，耳机里放着国际新闻。她不想钱小程，一下楼就像一阵风似的飞奔。她按着平时的节奏，跟在钱小程后面儿。她俩就这么一个在前面跑，一个在后面稳妥妥地追。</span></p><p><span>赵瑾一旦进入了听力模式，就会不自觉地跟着播音员重复她读的内容，关于这一点她是不自知的。她跑的很专心，听的也很入神。以至于她没有注意，撒欢儿的大长公主已经跑到她身边，迈着轻快的步伐，跟着她的节奏，听着她纯正的发音，以及期间夹杂的喘息。</span></p><p><span>不知不觉她俩已经跑到平湖了，眨眼间半个小时过去了，某空调终于有些当机了。她停下脚步，然而跟在后边儿的大长公主走路可不咋仔细，一下就这么撞上去了。</span></p><p><span>怦怦怦怦……好吧某空调这下真的当机了。</span></p><p><span>赵瑾身上有股淡淡的清香……唔，好吧有点儿臭，不过还是好好闻啊……</span></p><p><span>大长公主吃痛的嗷了一嗓子，然而思绪却逐渐飘进了某个奇怪的领域……</span></p><p><span>“你干嘛突然停下啊。”</span></p><p><span>“对不起。”赵瑾自觉着委屈，皱了皱眉，低了低头。但是表面看上去脸红的像充血似的，再加上赵瑾天生嘴角向下，像是因为钱小程这么撞上去而感到不悦，很是愤怒。</span></p><p><span>你这表情算是哪门子对不起啊？</span></p><p><span>“诶，生气啦？”</span></p><p><span>“？”赵瑾懵逼地眨了眨眼。我生哪门子气？？？？？</span></p><p><span>“你脸好红啊……没事吧？”眼看着空调被油上红油漆，还不停地喘气，不会出什么问题吧？钱小程赶紧凑到赵瑾的脸前，掂了掂脚尖，用手摸了摸赵瑾的额头探了探。</span></p><p><span>！</span></p><p><span>赵瑾猛地一抓，撇开脸，眼神躲闪着，喉哝滚了滚：“能不能……别靠我那么近。”</span></p><p><span>声音细小如蚊，恰好被风掩过。</span></p><p><span>“？你说啥。”</span></p><p><span>“没，让我缓缓。”赵瑾瞥了瞥紧握的双手，不知为何一向惧怕肢体接触的她竟不想松开。</span></p><p><span>钱小程突然心中一计，向后一仰，拽着赵瑾，俩人双双跌入草坪中。</span></p><p><span>那一瞬，只剩下怦怦的心跳和飒飒的秋风。</span></p><p><span>俩人很默契地沉默着，没有说一句话，安静地仰望着头顶的天空。</span></p><p><span>“赵瑾。能不能让我再靠近一点。”钱小程偏过头，缓缓地说。</span></p><p><span>靠近一点么……真可以吗？</span></p><p><span>“别怕，试试吧。”</span></p><p><span>随便了……试试就试试吧。赵瑾捂住双眼，含糊地嗯了一声。</span></p><p><span>钱小程望着少女红了的耳根，微微勾了勾嘴角，今天的风很大呢！</span></p><p><span>其实，彼此间早就已经靠近了。</span></p><p>&nbsp;</p><h2><a name="section-5" class="md-header-anchor"></a><span>Section 5</span></h2><p><span>钱小程支着脑袋，转着笔正对着一张政治卷死磕。半个暑假的吃喝玩乐，知识点啥的全还给老师了，还能辨别的出靠的是哪门对于大长公主来说已是不易。初中的政治是开卷的，但是高中却是闭卷的，变态的三中为了初高完美衔接，安排的考试范围是初中的内容，但考生是闭卷答题。明面儿上响应华国教育部减负的号召，实际上从侧面变相给学生加负。不过话又说回来这种筛选方式虽然残酷但从某种意义上着实能让人奋发图强。</span></p><p><span>“啊啊啊啊！我讨厌文科，呜呜呜。”大长公主又倒在赵瑾身上。虽然说吧，确实是尝试靠近一点，但这没骨头的行为是怎么回事啊……无可奈何的赵瑾轻轻托住，隔着校服的布料可以摸到钱小程的背脊。好瘦……平时吃的也不少啊……等等在想什么？赵瑾故作淡定地喝了口水。</span></p></div>
+</body>
+</html>

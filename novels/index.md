@@ -11,3 +11,10 @@
 斯盖儿的小说（杨雨露友人）
 
 [前程似锦](bright-future)
+
+[七年](seven-years)
+
+[影子看月光](shadow-moonshine)
+
+[灯光](the-light)
+
